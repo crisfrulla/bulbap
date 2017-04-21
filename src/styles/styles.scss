@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import '../styles/variables.scss';
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+  font-size: 16px !important;
+  line-height: 26px;
+  color: #666;
+}
+
+h1 {
+	font-size: 3.8em;
+	// @media (min-width: $small) {
+	//
+	// }
+
+	@media (min-width: $medium) {
+		font-size: 4em;
+	}
+
+	@media (min-width: $large) {
+		font-size: 4.2em;
+	}
+
+	@media (min-width: $xlarge) {
+		font-size: 4.4em;
+	}
+}
+
+h2 {
+	font-size: 3em;
+	// @media (min-width: $small) {
+	// 	font-size: 3em;
+	// }
+
+	@media (min-width: $medium) {
+		font-size: 3.1em;
+	}
+
+	@media (min-width: $large) {
+		font-size: 3.2em;
+	}
+
+	@media (min-width: $xlarge) {
+		font-size: 3.4em;
+	}
+}
+
+h3 {
+	font-size: 2.9em;
+}
+
+a {
+  color: $bulbap-green;
+  &:hover {
+    color: darken($bulbap-green, 8%);
+  }
+}
+.lead {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+small {
+  //display: block;
+  font-weight: 300;
+}
+// .feature-block {
+// 	padding-bottom: 140px;
+//   padding-top: 140px;
+// }
+// .feature-block-lg {
+// 	padding-bottom: 80px;
+// 	padding-top: 80px;
+//
+// 	@media (min-width: $medium) {
+// 		padding-bottom: 100px;
+// 		padding-top: 100px;
+// 	}
+//
+// 	@media (min-width: $large) {
+// 		padding-bottom: 120px;
+// 		padding-top: 120px;
+// 	}
+//
+// 	@media (min-width: $xlarge) {
+// 		padding-bottom: 140px;
+// 		padding-top: 140px;
+// 	}
+// }
+// .feature-block-md {
+// 	padding-bottom: 40px;
+// 	padding-top: 40px;
+//
+// 	@media (min-width: $medium) {
+// 		padding-bottom: 50px;
+// 		padding-top: 50px;
+// 	}
+//
+// 	@media (min-width: $large) {
+// 		padding-bottom: 60px;
+// 		padding-top: 60px;
+// 	}
+//
+// 	@media (min-width: $xlarge) {
+// 		padding-bottom: 70px;
+// 		padding-top: 70px;
+// 	}
+// }
+// .feature-block-sm {
+// 	padding-bottom: 20px;
+// 	padding-top: 20px;
+//
+// 	@media (min-width: $medium) {
+// 		padding-bottom: 26px;
+// 		padding-top: 26px;
+// 	}
+//
+// 	@media (min-width: $large) {
+// 		padding-bottom: 30px;
+// 		padding-top: 30px;
+// 	}
+//
+// 	@media (min-width: $xlarge) {
+// 		padding-bottom: 40px;
+// 		padding-top: 40px;
+// 	}
+// }
+// .feature-block-heading {
+// 	padding-bottom: 20px;
+// 	padding-top: 80px;
+//
+// 	@media (min-width: $medium) {
+// 		padding-bottom: 26px;
+// 		padding-top: 120px;
+// 	}
+//
+// 	@media (min-width: $large) {
+// 		padding-bottom: 30px;
+// 		padding-top: 130px;
+// 	}
+//
+// 	@media (min-width: $xlarge) {
+// 		padding-bottom: 40px;
+// 		padding-top: 140px;
+// 	}
+// }
+.spacing-sm-top {
+	padding-top: 20px;
+
+	@media (min-width: $medium) {
+		padding-top: 26px;
+	}
+
+	@media (min-width: $large) {
+		padding-top: 30px;
+	}
+
+	@media (min-width: $xlarge) {
+		padding-top: 40px;
+	}
+}
+.spacing-sm-bottom {
+	padding-bottom: 20px;
+
+	@media (min-width: $medium) {
+		padding-bottom: 26px;
+	}
+
+	@media (min-width: $large) {
+		padding-bottom: 30px;
+	}
+
+	@media (min-width: $xlarge) {
+		padding-bottom: 40px;
+	}
+}
+.spacing-md-top {
+	padding-top: 40px;
+
+	@media (min-width: $medium) {
+		padding-top: 50px;
+	}
+
+	@media (min-width: $large) {
+		padding-top: 60px;
+	}
+
+	@media (min-width: $xlarge) {
+		padding-top: 70px;
+	}
+}
+.spacing-md-bottom {
+	padding-bottom: 40px;
+
+	@media (min-width: $medium) {
+		padding-bottom: 50px;
+	}
+
+	@media (min-width: $large) {
+		padding-bottom: 60px;
+	}
+
+	@media (min-width: $xlarge) {
+		padding-bottom: 70px;
+	}
+}
+.spacing-lg-top {
+	padding-top: 80px;
+
+	@media (min-width: $medium) {
+		padding-top: 100px;
+	}
+
+	@media (min-width: $large) {
+		padding-top: 120px;
+	}
+
+	@media (min-width: $xlarge) {
+		padding-top: 140px;
+	}
+}
+.spacing-lg-bottom {
+	padding-bottom: 80px;
+
+	@media (min-width: $medium) {
+		padding-bottom: 100px;
+	}
+
+	@media (min-width: $large) {
+		padding-bottom: 120px;
+	}
+
+	@media (min-width: $xlarge) {
+		padding-bottom: 140px;
+	}
+}
+.spacing-zero-top {
+	padding-top: 0;
+}
+.spacing-zero-bottom {
+	padding-bottom: 0;
+}
+// h1, h2, h3 {
+//   small {
+//     display: block;
+//     font-weight: 300;
+//   }
+// }
+
+h1, h2, h3 {
+	font-family: Dense-Regular;
+	font-weight: normal;
+	font-style: normal;
+	color: #000;
+	small {
+		display: block;
+		font-weight: 300;
+		font-size: 50%;
+		font-family: Dense-Thin;
+		font-weight: normal;
+		font-style: normal;
+		color: $bulbap-green;
+	}
+}
+
+.img-shadow {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.Dense-Bold {
+	font-family: Dense-Bold;
+	font-weight: normal;
+	font-style: normal;
+}
+.Dense-Thin {
+	font-family: Dense-Thin;
+	font-weight: normal;
+	font-style: normal;
+}
+.Dense-Regular {
+	font-family: Dense-Regular;
+	font-weight: normal;
+	font-style: normal;
+}

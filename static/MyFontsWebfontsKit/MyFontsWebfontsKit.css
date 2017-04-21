@@ -1,0 +1,40 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3374624, 2017-04-15T11:11:17-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Dense-Bold by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/dense/bold/
+ * 
+ * Webfont: Dense-Thin by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/dense/thin/
+ * 
+ * Webfont: Dense-Regular by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/dense/regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3374624
+ * Licensed pageviews: 20,000
+ * Webfonts copyright: Copyright (c) 2013 by Charles Daoud. All rights reserved.
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/337e20");
+
+  
+@font-face {font-family: 'Dense-Bold';src: url('webfonts/337E20_0_0.eot');src: url('webfonts/337E20_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/337E20_0_0.woff2') format('woff2'),url('webfonts/337E20_0_0.woff') format('woff'),url('webfonts/337E20_0_0.ttf') format('truetype'),url('webfonts/337E20_0_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'Dense-Thin';src: url('webfonts/337E20_1_0.eot');src: url('webfonts/337E20_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/337E20_1_0.woff2') format('woff2'),url('webfonts/337E20_1_0.woff') format('woff'),url('webfonts/337E20_1_0.ttf') format('truetype'),url('webfonts/337E20_1_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'Dense-Regular';src: url('webfonts/337E20_2_0.eot');src: url('webfonts/337E20_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/337E20_2_0.woff2') format('woff2'),url('webfonts/337E20_2_0.woff') format('woff'),url('webfonts/337E20_2_0.ttf') format('truetype'),url('webfonts/337E20_2_0.svg#wf') format('svg');}
+ 
