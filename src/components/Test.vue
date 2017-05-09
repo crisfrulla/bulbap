@@ -1,30 +1,28 @@
 <template>
-  <div class="locations animated fadeIn">
+  <div class="test animated fadeIn">
     <Hero
-      class="hero-image-contact"
-      heroHeadingEn="Locations Heading"
+      class="hero-image-menu"
+      heroHeadingEn="Test Page"
       heroHeadingKo="한국어 단어"
       heroContent="Some content about this page">
     </Hero>
-    <div class="container spacing-md-bottom spacing-md-top">
-      <LocationShop></LocationShop>
+
+    <div class="spacing-md-bottom spacing-md-top">
+      <!-- <NewNav></NewNav> -->
     </div>
-    <div class="spacing-zero-bottom spacing-md-top">
-      <SocialContainer></SocialContainer>
-    </div>
+
   </div>
 </template>
 
 <script>
 import Hero from '../components/partials/Hero.vue'
-import LocationShop from '../components/partials/LocationShop.vue'
 import SocialContainer from '../components/partials/SocialContainer.vue'
+// import NewNav from '../components/partials/NewNav.vue'
 
 export default {
-  name: 'locations',
+  name: 'test',
   components: {
     Hero,
-    LocationShop,
     SocialContainer
   }
 }
@@ -34,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/MyFontsWebfontsKit/MyFontsWebfontsKit.css';
 @import '../styles/styles.scss';
-  .hero-image-contact {
+  .hero-image-menu {
     background-image: url(../../static/hero-bg.png);
   }
 </style>

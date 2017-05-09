@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Menu from '@/components/Menu'
 import Locations from '@/components/Locations'
 import FileNotFound from '@/components/FileNotFound'
+import Test from '@/components/Test'
 
 Vue.use(Router)
 
@@ -13,7 +14,9 @@ export default new Router({
     { path: '/', component: Home, meta: { scrollToTop: true } },
     { path: '/menu', component: Menu },
     { path: '/locations', component: Locations },
+    { path: '/test', component: Test },
     { path: '*', component: FileNotFound }
+
   ],
   scrollBehavior (to, from, savedPosition) {
     return {x: 0, y: 0}

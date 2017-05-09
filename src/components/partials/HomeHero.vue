@@ -7,6 +7,9 @@
             <!-- <h1>Welcome</h1> -->
             <img class="home-hero-logo img-fluid" src="../../../static/home-logo.svg" alt="">
           </div>
+          <!-- <div class="scroll text-center">
+            <i class="fa fa-angle-down arrow fa-2x" aria-hidden="true"></i>
+          </div> -->
         </div>
       </div>
     </div>
@@ -52,42 +55,19 @@ $bulbap-green: #5E9426;
     color: #fff;
   }
 }
-.sk-double-bounce {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  margin: 0;
-  bottom: 0;
-  margin: 40px auto;
+.scroll {
+  color: #fff;
 }
-.sk-double-bounce .sk-child {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #ccc;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: sk-doubleBounce 2s infinite ease-in-out;
+.arrow {
+  animation: bounce 4s infinite;
+  position: relative;
+  display: block;
+//  margin: 10px auto;
 }
-.sk-double-bounce .sk-double-bounce2 {
-  animation-delay: -1.0s;
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
 }
-@-webkit-keyframes sk-doubleBounce {
-  0%, 100% {
-            transform: scale(0);
-  }
-  50% {
-            transform: scale(1);
-  }
-}
-@keyframes sk-doubleBounce {
-  0%, 100% {
-            transform: scale(0);
-  }
-  50% {
-            transform: scale(1);
-  }
-}
+
 </style>

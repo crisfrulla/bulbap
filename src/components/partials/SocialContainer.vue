@@ -1,5 +1,5 @@
 <template>
-  <div class="social-section angle">
+  <div class="social-section">
     <div class="layer">
       <div class="container">
         <div class="row">

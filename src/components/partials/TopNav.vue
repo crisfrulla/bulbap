@@ -1,10 +1,18 @@
 <template>
-  <div id="topNav" class="navbar-light fixed-top nav-down">
+  <nav id="topNav" class="navbar-light fixed-top nav-down">
     <div class="container">
       <nav class="navbar navbar-toggleable-md">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
+      <div @click="overlayNav" id="mainNavBtn" class="hamburger hamburger--spin navbar-toggler-right hidden-lg-up">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+      <!-- <button @click="overlayNav" id="mainNavBtn" class="navbar-toggler-right hidden-lg-up">
+        &#9776;
+      </button> -->
       <router-link  class="navbar-brand" to="/"><img class="logo" src="./../../assets/Inline-Logo.svg" alt="logo"></router-link>
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ml-auto">
@@ -26,16 +34,33 @@
         <div class="col-12">
           <div id="myNav" class="overlay">
             <div class="overlay-content">
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Clients</a>
-              <a href="#">Contact</a>
+              <router-link
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="mobile-nav"
+                to="/">
+                Home
+              </router-link>
+              <router-link
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="mobile-nav"
+                to="/menu">
+                Menu
+              </router-link>
+              <router-link
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="mobile-nav"
+                to="/locations">
+                Locations
+              </router-link>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 
@@ -43,14 +68,23 @@
 
 <script>
 export default {
-  name: 'topNav'
+  name: 'topNav',
+  methods: {
+    overlayNav () {
+      console.log('clicked')
+    }
+  }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 @import '../../styles/MyFontsWebfontsKit/MyFontsWebfontsKit.css';
 @import '../../styles/styles.scss';
+  #mainNavBtn {
+    top: 14px;
+  }
   .navbar-light {
     //margin-top: 20px;
     background: rgba(255,255,255,.9);
@@ -106,6 +140,9 @@ export default {
 
   .router-link-active {
     color: green !important;
+    &.mobile-nav {
+      color: #fff !important;
+    }
     //font-weight: bolder !important;
   }
   .nav-up {
@@ -124,10 +161,10 @@ export default {
       width: 100%;
       position: fixed;
       z-index: 1;
-      top: 0;
+      //top: 0;
       left: 0;
       background-color: $bulbap-green;
-      background-color: rgba($bulbap-green, 0.9);
+      background-color: rgba($bulbap-green, 0.8);
       overflow-y: hidden;
       transition: 0.4s;
   }
@@ -141,14 +178,17 @@ export default {
   }
 
   .overlay a {
-      padding: 8px;
+      padding: 30px;
       text-decoration: none;
-      font-size: 36px;
+      font-size: 60px;
       color: #fff;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       display: block;
       transition: 0.3s;
+      font-family: Dense-Regular;
+      font-weight: normal;
+      font-style: normal;
   }
 
   .overlay a:hover, .overlay a:focus {
