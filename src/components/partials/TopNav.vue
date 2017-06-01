@@ -164,7 +164,7 @@ export default {
       //top: 0;
       left: 0;
       background-color: $bulbap-green;
-      background-color: rgba($bulbap-green, 0.8);
+      background-color: rgba($bulbap-green, 0.9);
       overflow-y: hidden;
       transition: 0.4s;
   }

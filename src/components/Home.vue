@@ -4,10 +4,10 @@
     </HomeHero>
     <div class="spacing-md-bottom spacing-md-top">
       <ContentLeft6
-        headingContentEn="Home Heading"
+        headingContentEn="BULBAP GRILL"
         headingContentKo="한국어 단어"
-        content="Have you ever wanted to experience Korean food or have in the past and wished there was something more local? Well, it's finally happening! We're calling it Bulbap Grill. Bul in Korean language means fire. When used in describing food, Bul means grilled or spicy. It's a casual Korean fusion restaurant, and will be the next it place for people to experience the taste of traditional Korean food with some innovative twists!"
-        contentImageUrl="../../static/square-bg.png">
+        content="Home Heading Content- Have you ever wanted to experience Korean food or have in the past and wished there was something more local? Well, it's finally happening! We're calling it Bulbap Grill. Bul in Korean language means fire. When used in describing food, Bul means grilled or spicy. It's a casual Korean fusion restaurant, and will be the next it place for people to experience the taste of traditional Korean food with some innovative twists!"
+        contentImageUrl="../../static/home-intro.jpg">
       </ContentLeft6>
     </div>
 
@@ -28,14 +28,14 @@
           <MenuCard
             class="menu-card-image-1"
             menuCardUrl="/menu"
-            menuCardContent="Dish 1">
+            menuCardContent="Rice Bowls">
           </MenuCard>
         </div>
         <div class="col-md-6 col-lg-5">
           <MenuCard
             class="menu-card-image-2"
             menuCardUrl="/menu"
-            menuCardContent="Dish 2">
+            menuCardContent="Tacos 	&amp; Sliders">
           </MenuCard>
         </div>
       </div>
@@ -44,14 +44,14 @@
           <MenuCard
             class="menu-card-image-3"
             menuCardUrl="/menu"
-            menuCardContent="Dish 3">
+            menuCardContent="Chicken Wings">
           </MenuCard>
         </div>
         <div class="col-md-6 col-lg-7">
           <MenuCard
             class="menu-card-image-4"
             menuCardUrl="/menu"
-            menuCardContent="Dish 4">
+            menuCardContent="BBQ 	&amp; Soups">
           </MenuCard>
         </div>
       </div>
@@ -60,14 +60,14 @@
           <MenuCard
             class="menu-card-image-1"
             menuCardUrl="/menu"
-            menuCardContent="Dish 5">
+            menuCardContent="Bulbap Apps">
           </MenuCard>
         </div>
         <div class="col-md-6 col-lg-5">
           <MenuCard
             class="menu-card-image-2"
             menuCardUrl="/menu"
-            menuCardContent="Dish 6">
+            menuCardContent="Bing Soo">
           </MenuCard>
         </div>
       </div>
@@ -110,20 +110,30 @@ export default {
 @import '../styles/styles.scss';
   .hero-image-home {
     background-image: url(../../static/home-hero.jpg);
-    -webkit-filter: contrast(150%); /* Safari */
-    filter: contrast(150%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    // -webkit-filter: contrast(150%); /* Safari */
+    // filter: contrast(150%);
   }
 
   .menu-card-image-1 {
-    background-image: url(../../static/square-bg.png);
+    background-image: url(../../static/rice-bowls-menu.jpg);
   }
   .menu-card-image-2 {
-    background-image: url(../../static/square-bg.png);
+    background-image: url(../../static/tacos-sliders-menu.jpg);
   }
   .menu-card-image-3 {
-    background-image: url(../../static/square-bg.png);
+    background-image: url(../../static/chicken-wings-menu.jpg);
   }
   .menu-card-image-4 {
-    background-image: url(../../static/square-bg.png);
+    background-image: url(../../static/bbq-soups-menu.jpg);
+  }
+  .menu-card-image-5 {
+    background-image: url(../../static/bulbap-apps-menu.jpg);
+  }
+  .menu-card-image-6 {
+    background-image: url(../../static/bing-soo-menu.jpg);
   }
 </style>

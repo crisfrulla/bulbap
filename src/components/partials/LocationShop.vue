@@ -1,6 +1,6 @@
 <template>
   <div class="locations">
-    <div class="row spacing-md-bottom spacing-md-top" v-for="shop in locations">
+    <div class="row  spacing-md-bottom spacing-md-top d-flex align-items-center" v-for="shop in locations">
       <div class="col-lg-6 col-xl-7">
         <div class="row">
           <div class="col-12">
@@ -42,33 +42,33 @@ export default {
           locationName: 'Brooklyn',
           locationStreet: '646 Manhattan Avenue',
           locationZip: 'Brooklyn NY 11222',
-          locationWeekHours: 'Mon to Fri: 10:00 - 22:00',
-          locationWeekEndHours: 'Sat to Sun: 11:00 - 22:00',
+          locationWeekHours: 'Mon to Fri: 12:00 - 12:00',
+          locationWeekEndHours: 'Sat to Sun: 12:00 - 12:00',
           locationNote: 'Across the street from McCarren Park (intersection between Bedford Ave and Manhattan Ave)',
           locationTransportation: 'From Manhattan - take E train to Court Square then transfer to G train.  3 stops to Nassau Ave. station',
-          locationPhoto: '../../static/rectangle-bg.png',
+          locationPhoto: '../../static/brooklyn-contact.jpg',
           locationMap: 'https://goo.gl/maps/uxnGiPRTcUM2'
         },
         {
           locationName: 'Bronx',
           locationStreet: '305 E. Fordham Rd',
           locationZip: 'Bronx NY 10458',
-          locationWeekHours: 'Mon to Fri: 10:00 - 22:00',
-          locationWeekEndHours: 'Sat to Sun: 11:00 - 22:00',
+          locationWeekHours: '',
+          locationWeekEndHours: '',
           locationNote: '2 blocks from Fordham University',
           locationTransportation: 'From Manhattan - take E train to Court Square then transfer to G train. 3 stops to Nassau Ave. station',
-          locationPhoto: '../../static/rectangle-bg.png',
+          locationPhoto: '../../static/comingSoon-contact.jpg',
           locationMap: 'https://goo.gl/maps/83xq4YS943C2'
         },
         {
           locationName: 'Marlboro, NJ',
           locationStreet: '280 Route 9 N',
           locationZip: 'Marlboro NJ 07751',
-          locationWeekHours: 'Mon to Fri: 10:00 - 22:00',
-          locationWeekEndHours: 'Sat to Sun: 11:00 - 22:00',
+          locationWeekHours: '',
+          locationWeekEndHours: '',
           locationNote: 'Cambridge Square Shopping Center (Next to ShopRite)',
-          locationTransportation: 'N/A',
-          locationPhoto: '../../static/rectangle-bg.png',
+          locationTransportation: '',
+          locationPhoto: '../../static/comingSoon-contact.jpg',
           locationMap: 'https://goo.gl/maps/7Fsmy58vfxv'
         }
       ]

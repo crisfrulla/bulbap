@@ -2,20 +2,20 @@
   <div id="app">
     <TopNav></TopNav>
     <router-view></router-view>
-    <MainFooter></MainFooter>
+    <WorkWithUs></WorkWithUs>
     <SubFooter></SubFooter>
   </div>
 </template>
 
 <script>
 import TopNav from './components/partials/TopNav.vue'
-import MainFooter from './components/partials/MainFooter.vue'
+import WorkWithUs from './components/partials/WorkWithUs.vue'
 import SubFooter from './components/partials/SubFooter.vue'
 export default {
   name: 'app',
   components: {
     TopNav,
-    MainFooter,
+    WorkWithUs,
     SubFooter
   }
 }

@@ -284,3 +284,15 @@ h1, h2, h3 {
 	font-weight: normal;
 	font-style: normal;
 }
+
+.btn-outline-bulbap {
+	color: #fff;
+	background-image: none;
+	background-color: transparent;
+	border-color: #fff;
+	&:hover, &:focus {
+		color: $bulbap-green;
+    background-color: #fff;
+    border-color: #fff;
+	}
+}

@@ -1,15 +1,12 @@
 <template>
   <div class="subFooter">
     <div class="container">
-      <div class="row">
+      <div class="row d-flex align-items-center">
         <div class="col-lg-8">
-          <ul class="list-inline">
-            <li class="list-inline-item">Contact</li>
-            <li class="list-inline-item">Legal Infotmation</li>
-          </ul>
+          <p><small>©2017 BULBAP GRILL. All Rights Reserved.</small></p>
         </div>
-        <div class="col-lg-4 text-right">
-          <p>©2017 BULBAP GRILL. All Rights Reserved.</p>
+        <div class="col-lg-4 text-lg-right">
+          <SocialIcons class="social-media-icon-white-o"></SocialIcons>
         </div>
       </div>
     </div>
@@ -17,8 +14,12 @@
 </template>
 
 <script>
+import SocialIcons from '../partials/SocialIcons.vue'
 export default {
-  name: 'subFooter'
+  name: 'subFooter',
+  components: {
+    SocialIcons
+  }
 }
 </script>
 
@@ -32,6 +33,12 @@ export default {
     padding: 30px;
     ul, p {
       margin-bottom: 0;
+    }
+    @media (max-width: 992px) {
+      text-align: center;
+      .social-media-icon-white-o {
+        margin-top: 16px;
+      }
     }
   }
 </style>

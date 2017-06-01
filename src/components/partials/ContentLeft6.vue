@@ -28,7 +28,6 @@ export default {
 @import '../../styles/MyFontsWebfontsKit/MyFontsWebfontsKit.css';
 // @import '../../styles/variables.scss';
 @import '../../styles/styles.scss';
-$bulbap-green: #5E9426;
 .content {
   padding: 150px 0 50px 0;
   h2 {

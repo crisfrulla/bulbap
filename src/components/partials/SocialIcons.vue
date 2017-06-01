@@ -1,13 +1,13 @@
 <template>
   <div class="socialIcons ">
-    <a href="#" target="_blank">
+    <a href="https://www.facebook.com/BulbapGrill/" target="_blank">
       <span class="fa fa-facebook"></span><span class="sr-only">facebook</span>
     </a>
-    <a href="#" target="_blank">
+    <a href="https://www.instagram.com/bulbapgrill/" target="_blank">
       <span class="fa fa-instagram"></span><span class="sr-only">instagram</span>
     </a>
-    <a href="#" target="_blank">
-      <span class="fa fa-twitter"></span><span class="sr-only">twitter</span>
+    <a href="https://www.yelp.com/biz/bulbap-grill-brooklyn" target="_blank">
+      <span class="fa fa-yelp"></span><span class="sr-only">twitter</span>
     </a>
   </div>
 </template>

@@ -36,6 +36,6 @@ export default {
 @import '../styles/MyFontsWebfontsKit/MyFontsWebfontsKit.css';
 @import '../styles/styles.scss';
   .hero-image-menu {
-    background-image: url(../../static/hero-bg.png);
+    background-image: url(../../static/menu-hero.jpg);
   }
 </style>

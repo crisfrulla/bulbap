@@ -35,6 +35,6 @@ export default {
 @import '../styles/MyFontsWebfontsKit/MyFontsWebfontsKit.css';
 @import '../styles/styles.scss';
   .hero-image-contact {
-    background-image: url(../../static/hero-bg.png);
+    background-image: url(../../static/contact-hero.jpg);
   }
 </style>

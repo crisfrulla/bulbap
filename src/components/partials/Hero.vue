@@ -2,7 +2,7 @@
   <div class="hero">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-12 col-md-8 col-lg-6">
           <div class="hero-content">
             <h1><small>{{ heroHeadingKo }}</small>{{ heroHeadingEn }}</h1>
             <p class="lead">{{ heroContent }}</p>
@@ -24,7 +24,6 @@ export default {
 <style lang="scss" scoped>
 @import '../../styles/MyFontsWebfontsKit/MyFontsWebfontsKit.css';
 @import '../../styles/styles.scss';
-$bulbap-green: #5E9426;
 .hero {
   height: 600px;
   display: flex;
@@ -62,6 +61,9 @@ $bulbap-green: #5E9426;
       margin: 15px 0;
       background: $bulbap-green;
     }
+  }
+  @media (max-width: 992px) {
+    height: 400px;
   }
 }
 </style>

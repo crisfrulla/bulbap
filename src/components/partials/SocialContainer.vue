@@ -35,13 +35,13 @@ $bulbap-green: #5E9426;
 
 .social-section {
     height: 600px;
-    background: url(../../../static/home-hero.jpg);
+    background: url(../../../static/socialmedia-hero.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   .layer {
-    background: rgba($bulbap-green, .9);
+    background: rgba($bulbap-green, .7);
     height: 100%;
     display: flex;
     flex-direction: row;
