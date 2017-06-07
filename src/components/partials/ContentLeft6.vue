@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-md-6 col-lg-7">
-          <h2><small>{{ headingContentKo }}</small>{{ headingContentEn }}</h2>
+          <h2>{{ headingContentEn }}</h2>
           <p class="lead">{{ content }}</p>
         </div>
         <div class="col-md-6 col-lg-5">

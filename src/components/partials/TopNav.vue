@@ -55,6 +55,7 @@
                 to="/locations">
                 Locations
               </router-link>
+              <SocialIcons class="social-media-icon-white-o spacing-md-top"></SocialIcons>
             </div>
           </div>
         </div>
@@ -67,8 +68,13 @@
 
 
 <script>
+import SocialIcons from '../partials/SocialIcons.vue'
+
 export default {
   name: 'topNav',
+  components: {
+    SocialIcons
+  },
   methods: {
     overlayNav () {
       console.log('clicked')
@@ -139,7 +145,7 @@ export default {
   }
 
   .router-link-active {
-    color: green !important;
+    color: $bulbap-green !important;
     &.mobile-nav {
       color: #fff !important;
     }
@@ -171,10 +177,10 @@ export default {
 
   .overlay-content {
       position: relative;
-      top: 25%;
+      top: 20%;
       width: 100%;
       text-align: center;
-      margin-top: 30px;
+      //margin-top: 30px;
   }
 
   .overlay a {

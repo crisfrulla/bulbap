@@ -25,6 +25,7 @@
               to="/locations">
               Locations
             </router-link>
+            <SocialIcons class="social-media-icon-white-o"></SocialIcons>
           </div>
         </div>
       </div>
@@ -33,7 +34,12 @@
 </template>
 
 <script>
+import SocialIcons from '../partials/SocialIcons.vue'
 export default {
+  name: 'overlayNav',
+  components: {
+    SocialIcons
+  }
 }
 </script>
 

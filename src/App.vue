@@ -9,13 +9,11 @@
 
 <script>
 import TopNav from './components/partials/TopNav.vue'
-import WorkWithUs from './components/partials/WorkWithUs.vue'
 import SubFooter from './components/partials/SubFooter.vue'
 export default {
   name: 'app',
   components: {
     TopNav,
-    WorkWithUs,
     SubFooter
   }
 }

@@ -1,11 +1,12 @@
 <template>
   <div class="hero">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-6">
-          <div class="hero-content">
-            <h1><small>{{ heroHeadingKo }}</small>{{ heroHeadingEn }}</h1>
-            <p class="lead">{{ heroContent }}</p>
+    <div class="hero-layer">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-sm-12 col-md-8 col-lg-6">
+            <div class="hero-content">
+              <h1>{{ heroHeadingEn }}</h1>
+            </div>
           </div>
         </div>
       </div>
@@ -34,36 +35,41 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  //filter:hue-rotate(-90deg);
-  // animation-name: imgScale;
-  // animation-timing-function: linear;
-  // animation-fill-mode: forwards;
-  // animation-duration: 20s;
   .hero-content {
-    padding: 30px;
-    margin-top: 90px;
-    background: rgba(255,255,255,.8);
-    min-height: 200px;
-    // small {
-    //   display: block;
-    //   font-weight: 300;
-    // }
+    margin-top: 75px;
     h1 {
       text-transform: uppercase;
       font-weight: 300;
+      color: #fff;
     }
-    p {
-      margin-bottom: 0;
-    }
-    .hero-divider {
-      height: 2px;
-      width: 40%;
-      margin: 15px 0;
-      background: $bulbap-green;
-    }
+
   }
   @media (max-width: 992px) {
-    height: 400px;
+    height: 300px;
+    background-attachment: local;
+  }
+}
+.hero-layer {
+  background: rgba($bulbap-green, .7);
+  //background-image: url(../../../static/home-hero-layer.svg);
+  // background-attachment: fixed;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row; /* works with row or column */
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  @media (max-width: 992px) {
+    height: 300px;
   }
 }
 </style>

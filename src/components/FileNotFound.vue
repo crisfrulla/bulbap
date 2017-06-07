@@ -6,7 +6,7 @@
       heroHeadingKo="한국어 단어"
       heroContent="We can't seem to find the page you are looking for.">
     </Hero>
-    <div class="container feature-block-md">
+    <div class="container spacing-lg-bottom spacing-lg-top">
       <p>Error code: 404</p>
       <p>Here are some helpful links instead:</p>
       <ul class="list-unstyled">

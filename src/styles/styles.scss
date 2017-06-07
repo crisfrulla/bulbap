@@ -4,7 +4,8 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-  font-size: 16px !important;
+  font-size: 18px !important;
+	font-weight: 300;
   line-height: 26px;
   color: #666;
 }
@@ -48,7 +49,7 @@ h2 {
 }
 
 h3 {
-	font-size: 2.9em;
+	font-size: 2.6em;
 }
 
 a {
@@ -66,6 +67,13 @@ a {
 small {
   //display: block;
   font-weight: 300;
+}
+a {
+	color: $bulbap-green;
+	&:hover, &:focus {
+		color: darken($bulbap-green, 5%);
+		text-decoration: none;
+	}
 }
 // .feature-block {
 // 	padding-bottom: 140px;

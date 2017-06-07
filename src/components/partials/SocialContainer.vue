@@ -31,7 +31,6 @@ export default {
 <style lang="scss" scoped>
 @import '../../styles/MyFontsWebfontsKit/MyFontsWebfontsKit.css';
 @import '../../styles/styles.scss';
-$bulbap-green: #5E9426;
 
 .social-section {
     height: 600px;
@@ -40,6 +39,10 @@ $bulbap-green: #5E9426;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 992px) {
+      height: 400px;
+      background-attachment: local;
+    }
   .layer {
     background: rgba($bulbap-green, .7);
     height: 100%;
@@ -54,6 +57,9 @@ $bulbap-green: #5E9426;
     .display-1 {
       color: #fff;
       font-size: 6rem;
+      @media (max-width: 992px) {
+        font-size: 4rem;
+      }
     }
   }
 }

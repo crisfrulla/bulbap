@@ -2,11 +2,9 @@
   <div class="locations animated fadeIn">
     <Hero
       class="hero-image-contact"
-      heroHeadingEn="Locations Heading"
-      heroHeadingKo="한국어 단어"
-      heroContent="Some content about this page">
+      heroHeadingEn="Locations">
     </Hero>
-    <div class="container spacing-md-bottom spacing-md-top">
+    <div class="container spacing-md-bottom">
       <LocationShop></LocationShop>
     </div>
     <div class="spacing-zero-bottom spacing-md-top">

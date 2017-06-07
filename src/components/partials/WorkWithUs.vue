@@ -32,6 +32,9 @@ export default {
     }
     background: $bulbap-green;
     color: #fff;
-    padding: 60px;
+    padding: 60px 0;
+    @media (max-width: 992px) {
+      padding: 30px 0;
+    }
   }
 </style>
