@@ -99,7 +99,7 @@ export default {
     line-height: .9em;
     margin-bottom: 0;
     @media (max-width: 992px) {
-      font-size: 5.6em;
+      font-size: 5em;
     }
   }
   .subHeading {

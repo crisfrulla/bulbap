@@ -2,11 +2,11 @@
   <div class="spacing-md-bottom spacing-md-top">
     <div class="container">
       <div class="row d-flex align-items-center">
-        <div class="col-md-6 col-lg-7">
+        <div class="col-lg-7">
           <h2>{{ headingContentEn }}</h2>
           <p class="lead">{{ content }}</p>
         </div>
-        <div class="col-md-6 col-lg-5">
+        <div class="col-lg-5">
           <div class="content-image">
             <img class="img-fluid" :src="contentImageUrl" alt="">
           </div>

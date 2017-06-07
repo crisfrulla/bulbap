@@ -52,6 +52,8 @@ export default {
   transition: all .1s linear;
   opacity: 0;
   position: absolute;
+  width: 260px;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -64,7 +66,7 @@ export default {
  transition: all .1s linear;
  text-transform: uppercase;
  color: #fff;
- font-size: 1.4rem;
+ font-size: 1.6rem;
 }
 .menuCard:hover .menuCardContentLabel {
   opacity: 1;
