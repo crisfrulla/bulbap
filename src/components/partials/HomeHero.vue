@@ -7,7 +7,9 @@
             <div class="intro">
               <div class="introContent">
                 <h1>bulbap grill</h1>
-                <div class="hero-divider"></div>
+                <div class="hero-divider">
+                  <img class="sticks" src="../../../static/sticks.svg" alt="sticks">
+                </div>
                 <p class="subHeading">korean food</p>
               </div>
               <!-- <h1>A Taste of Korea</h1> -->
@@ -95,8 +97,9 @@ export default {
     font-weight: 300;
     color: #fff;
     line-height: .9em;
+    margin-bottom: 0;
     @media (max-width: 992px) {
-      font-size: 6em;
+      font-size: 5.6em;
     }
   }
   .subHeading {
@@ -114,10 +117,14 @@ export default {
   }
 }
 .hero-divider {
-  height: 2px;
-  //width: 40%;
-  margin: 15px 0;
-  background: #fff;
+  // height: 2px;
+  // //width: 40%;
+  margin: 20px 0;
+  // background: #fff;
+  .sticks {
+    width: 100%;
+  }
+
 }
 
 .scroll  span {
