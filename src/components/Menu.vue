@@ -4,7 +4,9 @@
       class="hero-image-menu"
       heroHeadingEn="Menu">
     </Hero>
-
+    <div class="spacing-zero-bottom spacing-lg-top">
+        <Delivery></Delivery>
+    </div>
     <div class="container spacing-md-bottom spacing-sm-top">
       <MenuList></MenuList>
     </div>

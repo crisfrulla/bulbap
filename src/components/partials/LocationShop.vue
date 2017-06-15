@@ -11,7 +11,6 @@
               <li>{{ shop.locationStreet}}</li>
               <li>{{ shop.locationZip}}</li>
             </ul>
-            <p><a :href="shop.locationMap" target="_blank" class="text-uppercase"><i class="fa fa-map-marker fa-fw fa-lg" aria-hidden="true"></i>get direction</a></p>
           </div>
           <div class="col-md-6">
             <ul class="list-unstyled">
@@ -20,8 +19,10 @@
             </ul>
           </div>
           <div class="col-12">
-            <p class="small"><strong>Note:</strong> {{ shop.locationNote}}</p>
-            <p class="small"><strong>Transportation:</strong> {{ shop.locationTransportation}}</p>
+            <p><a :href="shop.locationMap" target="_blank"><i class="fa fa-map-marker fa-fw fa-lg" aria-hidden="true"></i>Get Direction</a></p>
+            <p v-if="shop.phone">Pick-Up and Delivery Available: <a href="tel:1-718-383-3663"> {{ shop.phone }}</a></p>
+            <p class=""><strong>Note:</strong> {{ shop.locationNote}}</p>
+            <p v-if="shop.locationTransportation" class=""><strong>Transportation:</strong> {{ shop.locationTransportation}}</p>
           </div>
         </div>
       </div>
@@ -47,7 +48,8 @@ export default {
           locationNote: 'Across the street from McCarren Park (intersection between Bedford Ave and Manhattan Ave)',
           locationTransportation: 'From Manhattan - take E train to Court Square then transfer to G train.  3 stops to Nassau Ave. station',
           locationPhoto: '../../static/brooklyn-contact.jpg',
-          locationMap: 'https://goo.gl/maps/uxnGiPRTcUM2'
+          locationMap: 'https://goo.gl/maps/uxnGiPRTcUM2',
+          phone: '( 718 ) 383-3663'
         },
         {
           locationName: 'Bronx',
@@ -58,7 +60,8 @@ export default {
           locationNote: '2 blocks from Fordham University',
           locationTransportation: 'From Manhattan - take E train to Court Square then transfer to G train. 3 stops to Nassau Ave. station',
           locationPhoto: '../../static/comingSoon-contact.jpg',
-          locationMap: 'https://goo.gl/maps/83xq4YS943C2'
+          locationMap: 'https://goo.gl/maps/83xq4YS943C2',
+          phone: ''
         },
         {
           locationName: 'Marlboro, NJ',
@@ -69,7 +72,8 @@ export default {
           locationNote: 'Cambridge Square Shopping Center (Next to ShopRite)',
           locationTransportation: '',
           locationPhoto: '../../static/comingSoon-contact.jpg',
-          locationMap: 'https://goo.gl/maps/7Fsmy58vfxv'
+          locationMap: 'https://goo.gl/maps/7Fsmy58vfxv',
+          phone: ''
         }
       ]
     }

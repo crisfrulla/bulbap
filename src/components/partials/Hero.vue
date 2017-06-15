@@ -44,13 +44,13 @@ export default {
     }
 
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     height: 300px;
     background-attachment: local;
   }
 }
 .hero-layer {
-  background: rgba($bulbap-green, .7);
+  background: rgba(#000, .3);
   //background-image: url(../../../static/home-hero-layer.svg);
   // background-attachment: fixed;
   background-attachment: fixed;
@@ -68,7 +68,7 @@ export default {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     height: 300px;
   }
 }

@@ -13,14 +13,14 @@
       <!-- <button @click="overlayNav" id="mainNavBtn" class="navbar-toggler-right hidden-lg-up">
         &#9776;
       </button> -->
-      <router-link  class="navbar-brand" to="/"><img class="logo" src="./../../assets/Inline-Logo.svg" alt="logo"></router-link>
+      <router-link  class="navbar-brand" to="/"><img class="logo" src="../../../static/Inline-Logo.svg" alt="logo"></router-link>
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <router-link  data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link" to="/" exact>Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link  data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link" to="/menu" exact>Menu</router-link>
+            <router-link  data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link" to="/menu">Menu</router-link>
           </li>
           <li class="nav-item">
             <router-link  data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link" to="/locations" exact>Locations</router-link>
@@ -89,21 +89,21 @@ export default {
 @import '../../styles/MyFontsWebfontsKit/MyFontsWebfontsKit.css';
 @import '../../styles/styles.scss';
   #mainNavBtn {
-    top: 14px;
+    top: 26px;
   }
   .navbar-light {
-    //margin-top: 20px;
+    //margin-top: 30px;
     background: rgba(255,255,255,.9);
     border-color: transparent;
     transition: top 0.2s ease-in-out;
-    box-shadow: 0 0 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);
+    box-shadow: 0 0 8px rgba(0,0,0,0.10), 0 8px 8px rgba(0,0,0,0.10);
   //  padding: 20px;
   }
   .navbar {
-    padding: 1.5rem 0rem;
+    padding: .5rem 0rem;
     position: relative;
     @media (min-width: $large) {
-      padding: 1rem 0rem;
+      padding: .5rem 0rem;
     }
   }
   .navbar-light .navbar-toggler {
@@ -114,18 +114,18 @@ export default {
   .logo {
     //width: auto;
     height: 80px;
-    position: absolute;
-    top: -12px;
-    @media (min-width: $large) {
-      height: 100px;
+    //position: absolute;
+    //top: -12px;
+    @media (max-width: 1200px) {
+      height: 60px;
     }
   }
   .nav-item {
     margin-left: 24px;
   }
   .navbar-nav {
-    padding-top: 40px;
-    @media (min-width: $large) {
+    //padding-top: 40px;
+    @media (max-width: 1200px) {
       padding-top: 0px;
     }
   }
@@ -152,7 +152,7 @@ export default {
     //font-weight: bolder !important;
   }
   .nav-up {
-    top: -100px;
+    top: -106px;
   }
 
   //overlay

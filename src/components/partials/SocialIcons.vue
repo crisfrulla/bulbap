@@ -1,6 +1,6 @@
 <template>
   <div class="socialIcons ">
-    <a href="https://www.facebook.com/BulbapGrill/" target="_blank">
+    <a href="https://www.facebook.com/BKBulbapgrill/" target="_blank">
       <span class="fa fa-facebook"></span><span class="sr-only">facebook</span>
     </a>
     <a href="https://www.instagram.com/bulbapgrill/" target="_blank">

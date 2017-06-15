@@ -3,8 +3,24 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>bulbap</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="apple-touch-icon" sizes="57x57" href="static/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+
+    <title>BULBAP GRILL :: KOREAN FOOD</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,62 +31,52 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-  <!-- <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> -->
   <script>
   $(document).ready(function(){
 
-    // var didScroll
-    // var lastScrollTop = 0
-    // var delta = 5
-    // var navbarHeight = $('#topNav').outerHeight()
-    //
-    // $(window).scroll(function (event) {
-    //   didScroll = true
-    // })
-    //
-    // setInterval(function () {
-    //   if (didScroll) {
-    //     hasScrolled()
-    //     didScroll = false
-    //   }
-    // }, 5)
-    // function hasScrolled () {
-    //   var st = $(this).scrollTop()
-    //   if (Math.abs(lastScrollTop - st) <= delta) {
-    //     return
-    //   }
-    //   if (st > lastScrollTop && st > navbarHeight) {
-    //     $('#topNav').removeClass('nav-down').addClass('nav-up')
-    //   } else {
-    //     if (st + $(window).height() < $(document).height()) {
-    //       $('#topNav').removeClass('nav-up').addClass('nav-down')
-    //     }
-    //   }
-    //   lastScrollTop = st
-    // }
+    var didScroll
+    var lastScrollTop = 0
+    var delta = 5
+    var navbarHeight = $('#topNav').outerHeight()
 
-    // window.sr = ScrollReveal();
-    // sr.reveal('.row');
+    $(window).scroll(function (event) {
+      didScroll = true
+    })
+
+    setInterval(function () {
+      if (didScroll) {
+        hasScrolled()
+        didScroll = false
+      }
+    }, 5)
+    function hasScrolled () {
+      var st = $(this).scrollTop()
+      if (Math.abs(lastScrollTop - st) <= delta) {
+        return
+      }
+      if (st > lastScrollTop && st > navbarHeight) {
+        $('#topNav').removeClass('nav-down').addClass('nav-up')
+      } else {
+        if (st + $(window).height() < $(document).height()) {
+          $('#topNav').removeClass('nav-up').addClass('nav-down')
+        }
+      }
+      lastScrollTop = st
+    }
 
     $('#mainNavBtn').click(function() {
     //  console.log('clicked')
       if ( $(this).hasClass('navOpen')) {
         $('#myNav').css('height', '0%');
-         $(this).removeClass('navOpen is-active');
+        $(this).removeClass('navOpen is-active');
+        $('body').removeClass('noScroll');
       }else {
         $('#myNav').css('height', '100%');
         $(this).addClass('navOpen is-active');
+        $('body').addClass('noScroll');
       }
     })
 
-    // var hamburgers = document.querySelectorAll(".hamburger");
-    // if (hamburgers.length > 0) {
-    //   forEach(hamburgers, function(hamburger) {
-    //     hamburger.addEventListener("click", function() {
-    //       this.classList.toggle("is-active");
-    //     }, false);
-    //   });
-    // }
 
     $('.mobile-nav').click(function() {
      $('#myNav').css('height', '0%');
@@ -78,5 +84,13 @@
     })
 
   });
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-90576709-1', 'auto');
+    ga('send', 'pageview');
   </script>
 </html>

@@ -2,12 +2,12 @@
   <div class="delivery">
     <div class="container">
       <div class="row d-flex align-items-center">
-        <div class="col-sm-4 hidden-sm-down">
+        <div class="col-sm-4">
           <img src="../../../static/delivery.svg" alt="delivery">
         </div>
-        <div class="col-md-8">
+        <div class="col-sm-8">
           <h3 class="text-uppercase">Pick-Up and Delivery Available</h3>
-          <p>Call us at <a href="tel:1-646-779-2781">(646) 779-2781</a></p>
+          <p>Call us at <a href="tel:1-718-383-3663"> ( 718 ) 383-3663</a></p>
         </div>
       </div>
     </div>
@@ -25,8 +25,14 @@ export default {
 @import '../../styles/MyFontsWebfontsKit/MyFontsWebfontsKit.css';
 @import '../../styles/styles.scss';
 .delivery {
+  @media (max-width: 576px) {
+    text-align: center;
+  }
   img {
     width: 100%;
+    @media (max-width: 576px) {
+      width: 50%;
+    }
   }
 }
 </style>

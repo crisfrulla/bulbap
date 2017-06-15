@@ -6,6 +6,7 @@
           <div class="col-md-10  offset-md-1 text-center">
             <div class="social-content">
               <h2 class="display-1 text-uppercase">connect with us</h2>
+              <p class="lead">Stay connected for monthly specials.</p>
               <p class="lead">Eat, love, share. #bulbapgrill</p>
               <SocialIcons class="social-media-icon-white-o-lg feature-block-sm"></SocialIcons>
             </div>
@@ -39,7 +40,7 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       height: 400px;
       background-attachment: local;
     }

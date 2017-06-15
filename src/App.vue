@@ -2,7 +2,6 @@
   <div id="app">
     <TopNav></TopNav>
     <router-view></router-view>
-    <WorkWithUs></WorkWithUs>
     <SubFooter></SubFooter>
   </div>
 </template>

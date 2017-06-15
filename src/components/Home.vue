@@ -2,21 +2,22 @@
   <div class="home animated fadeIn">
     <HomeHero class="hero-image-home">
     </HomeHero>
-    <div class="spacing-md-bottom">
+    <div class="spacing-zero-bottom">
       <ContentLeft6
-        content="Home Heading Content- Have you ever wanted to experience Korean food or have in the past and wished there was something more local? Well, it's finally happening! We're calling it Bulbap Grill. Bul in Korean language means fire. When used in describing food, Bul means grilled or spicy. It's a casual Korean fusion restaurant, and will be the next it place for people to experience the taste of traditional Korean food with some innovative twists!"
+        content="Have you ever wanted to experience Korean food or have in the past and wished there was something more local? Well, it's finally happening! We're calling it Bulbap Grill. Bul in Korean language means fire. When used in describing food, Bul means grilled or spicy. It's a casual Korean fusion restaurant, and will be the next it place for people to experience the taste of traditional Korean food with some innovative twists!"
         contentImageUrl="../../static/home-intro.jpg">
       </ContentLeft6>
     </div>
 
 
 
-    <div class="container spacing-md-bottom spacing-md-top">
+    <div class="container spacing-md-bottom spacing-sm-top">
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-8 offset-md-2 text-center">
           <h2 class="display-3">
             FOOD MENU
           </h2>
+          <p class="lead">We add in new menu items every month!  Please keep up to date on new monthly specials via our Social Media channels!</p>
           <br />
         </div>
       </div>
@@ -24,15 +25,15 @@
         <div class="col-md-6 col-lg-7">
           <MenuCard
             class="menu-card-image-1"
-            menuCardUrl="/menu"
-            menuCardContent="Rice Bowls">
+            menuCardUrl="/menu/#bulbapApps"
+            menuCardContent="Bulbap Apps">
           </MenuCard>
         </div>
         <div class="col-md-6 col-lg-5">
           <MenuCard
             class="menu-card-image-2"
-            menuCardUrl="/menu"
-            menuCardContent="Tacos 	&amp; Sliders">
+            menuCardUrl="/menu/#riceBowl"
+            menuCardContent="Rice Bowls">
           </MenuCard>
         </div>
       </div>
@@ -40,15 +41,15 @@
         <div class="col-md-6 col-lg-5">
           <MenuCard
             class="menu-card-image-3"
-            menuCardUrl="/menu"
+            menuCardUrl="/menu/#chickenWings"
             menuCardContent="Chicken Wings">
           </MenuCard>
         </div>
         <div class="col-md-6 col-lg-7">
           <MenuCard
             class="menu-card-image-4"
-            menuCardUrl="/menu"
-            menuCardContent="BBQ 	&amp; Soups">
+            menuCardUrl="/menu/#tacos"
+            menuCardContent="Tacos 	&amp; Sliders">
           </MenuCard>
         </div>
       </div>
@@ -56,23 +57,20 @@
         <div class="col-md-6 col-lg-7">
           <MenuCard
             class="menu-card-image-5"
-            menuCardUrl="/menu"
-            menuCardContent="Bulbap Apps">
+            menuCardUrl="/menu/#bbqSoups"
+            menuCardContent="BBQ 	&amp; Soups">
           </MenuCard>
         </div>
         <div class="col-md-6 col-lg-5">
           <MenuCard
             class="menu-card-image-6"
-            menuCardUrl="/menu"
+            menuCardUrl="/menu/#bingSoo"
             menuCardContent="Bing Soo">
           </MenuCard>
         </div>
       </div>
     </div>
 
-    <div class="spacing-md-bottom spacing-md-top">
-      <Delivery></Delivery>
-    </div>
 
     <div class="spacing-sm-bottom spacing-md-top">
       <SocialContainer></SocialContainer>
@@ -116,19 +114,21 @@ export default {
   }
 
   .menu-card-image-1 {
-    background-image: url(../../static/rice-bowls-menu.jpg);
+    background-image: url(../../static/bulbap-apps-menu.jpg);
   }
   .menu-card-image-2 {
-    background-image: url(../../static/tacos-sliders-menu.jpg);
+    background-image: url(../../static/rice-bowls-menu.jpg);
   }
   .menu-card-image-3 {
+    //chickenWings
     background-image: url(../../static/chicken-wings-menu.jpg);
   }
   .menu-card-image-4 {
-    background-image: url(../../static/bbq-soups-menu.jpg);
+    //bbqSoups
+    background-image: url(../../static/tacos-sliders-menu.jpg);
   }
   .menu-card-image-5 {
-    background-image: url(../../static/bulbap-apps-menu.jpg);
+    background-image: url(../../static/bbq-soups-menu.jpg);
   }
   .menu-card-image-6 {
     background-image: url(../../static/bing-soo-menu.jpg);

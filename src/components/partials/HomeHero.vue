@@ -3,7 +3,7 @@
     <div class="hero-layer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 offset-md-2 col-md-8 col-lg-5 col-xl-4 text-right">
+          <div class="col-sm-12 offset-md-2 col-md-8 offset-lg-3 col-lg-6 col-xl-4 text-right">
             <div class="intro">
               <div class="introContent">
                 <h1>bulbap grill</h1>
@@ -12,26 +12,13 @@
                 </div>
                 <p class="subHeading">korean food</p>
               </div>
-              <!-- <h1>A Taste of Korea</h1> -->
-              <!-- <img class="home-hero-logo img-fluid" src="../../../static/home-logo.svg" alt=""> -->
             </div>
-            <!-- <div class="scroll text-center">
-              <i class="fa fa-angle-down arrow fa-2x" aria-hidden="true"></i>
-            </div> -->
           </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-              <div class="scroll hidden-md-down">
-              	<span></span><span></span><span></span>
-              </div>
-            </div>
-        </div>
       </div>
-      <!-- <div class="sk-double-bounce">
-        <div class="sk-child sk-double-bounce1"></div>
-        <div class="sk-child sk-double-bounce2"></div>
-      </div> -->
+    </div>
+    <div class="scroll hidden-md-down">
+      <span></span><span></span><span></span>
     </div>
   </div>
 </template>
@@ -48,8 +35,8 @@ export default {
 @import '../../styles/styles.scss';
 .introContent {
   margin-top: 30px;
-  @media (max-width: 992px) {
-    margin-top: 60px;
+  @media (max-width: 1200px) {
+    margin-top: 100px;
     text-align: center;
   }
 }
@@ -62,12 +49,12 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     height: 400px;
     background-attachment: local;
   }
   .hero-layer {
-    background: rgba($bulbap-green, .7);
+    background: rgba(#000, .3);
     //background-image: url(../../../static/home-hero-layer.svg);
     // background-attachment: fixed;
     background-attachment: fixed;
@@ -85,7 +72,7 @@ export default {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       height: 400px;
       background-attachment: local;
     }
@@ -98,7 +85,7 @@ export default {
     color: #fff;
     line-height: .9em;
     margin-bottom: 0;
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       font-size: 5em;
     }
   }
@@ -112,7 +99,7 @@ export default {
       font-size: 5em;
     }
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     height: 400px;
   }
 }
@@ -126,14 +113,20 @@ export default {
   }
 
 }
-
+.scroll {
+  position: absolute;
+  top: 90%;
+  width: 100px;
+  margin: 0 auto;
+  left: 50%;
+}
 .scroll  span {
 	position: absolute;
-	top: 0;
+	top: 75%;
 	left: 50%;
 	width: 24px;
 	height: 24px;
-  margin-top: 200px;
+  //margin-top: 50px;
 	margin-left: -12px;
 	border-left: 1px solid #fff;
 	border-bottom: 1px solid #fff;
