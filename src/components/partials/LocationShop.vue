@@ -14,14 +14,14 @@
           </div>
           <div class="col-md-6">
             <ul class="list-unstyled">
-              <li>{{ shop.locationWeekHours}}</li>
-              <li>{{ shop.locationWeekEndHours}}</li>
+              <li v-if="shop.locationWeekHours">{{ shop.locationWeekHours}}</li>
+              <li v-if="shop.locationWeekEndHours">{{ shop.locationWeekEndHours}}</li>
             </ul>
           </div>
           <div class="col-12">
-            <p><a :href="shop.locationMap" target="_blank"><i class="fa fa-map-marker fa-fw fa-lg" aria-hidden="true"></i>Get Direction</a></p>
+            <p v-if="shop.locationMap"><a :href="shop.locationMap" target="_blank"><i class="fa fa-map-marker fa-fw fa-lg" aria-hidden="true"></i>Get Direction</a></p>
             <p v-if="shop.phone">Pick-Up and Delivery Available: <a href="tel:1-718-383-3663"> {{ shop.phone }}</a></p>
-            <p class=""><strong>Note:</strong> {{ shop.locationNote}}</p>
+            <p v-if="shop.locationNote" class=""><strong>Note:</strong> {{ shop.locationNote}}</p>
             <p v-if="shop.locationTransportation" class=""><strong>Transportation:</strong> {{ shop.locationTransportation}}</p>
           </div>
         </div>
@@ -57,10 +57,10 @@ export default {
           locationZip: 'Bronx NY 10458',
           locationWeekHours: '',
           locationWeekEndHours: '',
-          locationNote: '2 blocks from Fordham University',
-          locationTransportation: 'From Manhattan - take E train to Court Square then transfer to G train. 3 stops to Nassau Ave. station',
+          locationNote: '',
+          locationTransportation: '',
           locationPhoto: '../../static/comingSoon-contact.jpg',
-          locationMap: 'https://goo.gl/maps/83xq4YS943C2',
+          locationMap: '',
           phone: ''
         },
         {
@@ -69,10 +69,10 @@ export default {
           locationZip: 'Marlboro NJ 07751',
           locationWeekHours: '',
           locationWeekEndHours: '',
-          locationNote: 'Cambridge Square Shopping Center (Next to ShopRite)',
+          locationNote: '',
           locationTransportation: '',
           locationPhoto: '../../static/comingSoon-contact.jpg',
-          locationMap: 'https://goo.gl/maps/7Fsmy58vfxv',
+          locationMap: '',
           phone: ''
         }
       ]
