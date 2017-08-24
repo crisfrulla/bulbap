@@ -7,7 +7,8 @@
         </div>
         <div class="col-sm-8">
           <h3 class="text-uppercase">Pick-Up and Delivery Available</h3>
-          <p>Call us at <a href="tel:1-718-383-3663"> ( 718 ) 383-3663</a></p>
+          <router-link  data-toggle="collapse" to="/locations" exact><i class="fa fa-arrow-circle-right fa-fw" aria-hidden="true"></i>Check Locations</router-link>
+          <!-- <p>Call us at <a href="tel:1-718-383-3663"> ( 718 ) 383-3663</a></p> -->
         </div>
       </div>
     </div>

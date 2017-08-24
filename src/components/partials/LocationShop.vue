@@ -43,25 +43,25 @@ export default {
           locationName: 'Brooklyn',
           locationStreet: '646 Manhattan Avenue',
           locationZip: 'Brooklyn NY 11222',
-          locationWeekHours: 'Mon to Fri: 12:00 - 12:00',
-          locationWeekEndHours: 'Sat to Sun: 12:00 - 12:00',
+          locationWeekHours: 'Mon to Fri: 12:00 - 11:30',
+          locationWeekEndHours: 'Sat to Sun: 12:00 - 11:30',
           locationNote: 'Across the street from McCarren Park (intersection between Bedford Ave and Manhattan Ave)',
           locationTransportation: 'From Manhattan - take E train to Court Square then transfer to G train.  3 stops to Nassau Ave. station',
           locationPhoto: '../../static/brooklyn-contact.jpg',
           locationMap: 'https://goo.gl/maps/uxnGiPRTcUM2',
-          phone: '( 718 ) 383-3663'
+          phone: '( 718 ) 383 3663'
         },
         {
           locationName: 'Bronx',
           locationStreet: '305 E. Fordham Rd',
           locationZip: 'Bronx NY 10458',
-          locationWeekHours: '',
-          locationWeekEndHours: '',
-          locationNote: '',
+          locationWeekHours: 'Mon to Fri: 11:00 - 9:30',
+          locationWeekEndHours: 'Sat to Sun: 11:00 - 9:30',
+          locationNote: 'By Bryan Park (Next to Popular Community Bank) and 2 blocks from Fordham University',
           locationTransportation: '',
-          locationPhoto: '../../static/comingSoon-contact.jpg',
-          locationMap: '',
-          phone: ''
+          locationPhoto: '../../static/bronx-contact.jpg',
+          locationMap: 'https://goo.gl/maps/fPrVZdmSCa82',
+          phone: '( 718 ) 933 3537'
         },
         {
           locationName: 'Marlboro, NJ',
