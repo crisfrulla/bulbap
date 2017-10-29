@@ -1,10 +1,14 @@
 <template>
   <div class="locations">
-    <div class="row  spacing-md-bottom spacing-lg-top d-flex align-items-center" v-for="shop in locations">
+    <div class="row  spacing-md-bottom spacing-md-top d-flex align-items-center" v-for="shop in locations">
       <div class="col-lg-6 col-xl-7">
         <div class="row">
           <div class="col-12">
-            <h2>{{ shop.locationName }}</h2>
+            <h2>{{ shop.locationName }} 
+            <router-link to="/work-at-bulbap" exact>
+              <img class="img-fluid now-hiring-icon" src="../../../static/now-hiring-heading.svg" alt="now hiring">
+            </router-link>
+            </h2>
           </div>
           <div class="col-md-6">
             <ul class="list-unstyled">
@@ -85,4 +89,8 @@ export default {
 <style lang="scss" scoped>
 @import '../../styles/MyFontsWebfontsKit/MyFontsWebfontsKit.css';
 @import '../../styles/styles.scss';
+.now-hiring-icon {
+  width: 70px;
+  margin-left: 10px;
+}
 </style>

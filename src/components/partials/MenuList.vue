@@ -15,7 +15,6 @@
           <li v-if="dish.spicy" class="list-inline-item"><img class="foodIndicator" src="../../../static/spicy.svg" alt="Spicy food"> <small> Spicy</small></li>
           <li v-if="dish.vegetarian" class="list-inline-item"><img class="foodIndicator" src="../../../static/vegetarian.svg" alt="Vagetarian food"> <small> Vegetarian</small></li>
         </ul>
-        <p>${{ dish.dishPrice }}</p>
       </div>
       <div class="col-lg-6 col-xl-5">
         <div class="content-image">
@@ -40,7 +39,6 @@
           <li v-if="dish.spicy" class="list-inline-item"><img class="foodIndicator" src="../../../static/spicy.svg" alt="Spicy food"> <small> Spicy</small></li>
           <li v-if="dish.vegetarian" class="list-inline-item"><img class="foodIndicator" src="../../../static/vegetarian.svg" alt="Vagetarian food"> <small> Vegetarian</small></li>
         </ul>
-        <p>${{ dish.dishPrice }}</p>
       </div>
       <div class="col-lg-6 col-xl-5">
         <div class="content-image">
@@ -63,10 +61,6 @@
         <ul class="list-inline">
           <li v-if="dish.spicy" class="list-inline-item"><img class="foodIndicator" src="../../../static/spicy.svg" alt="Spicy food"> <small> Spicy</small></li>
           <li v-if="dish.vegetarian" class="list-inline-item"><img class="foodIndicator" src="../../../static/vegetarian.svg" alt="Vagetarian food"> <small> Vegetarian</small></li>
-        </ul>
-        <ul class="list-unstyled">
-          <li v-if="dish.smallDishPrice">6 pieces: ${{ dish.smallDishPrice }}</li>
-          <li v-if="dish.largeDishPrice">12 pieces: ${{ dish.largeDishPrice }}</li>
         </ul>
       </div>
       <div class="col-lg-6 col-xl-5">
@@ -91,7 +85,6 @@
           <li v-if="dish.spicy" class="list-inline-item"><img class="foodIndicator" src="../../../static/spicy.svg" alt="Spicy food"> <small> Spicy</small></li>
           <li v-if="dish.vegetarian" class="list-inline-item"><img class="foodIndicator" src="../../../static/vegetarian.svg" alt="Vagetarian food"> <small> Vegetarian</small></li>
         </ul>
-        <p>${{ dish.dishPrice }}</p>
       </div>
       <div class="col-lg-6 col-xl-5">
         <div class="content-image">
@@ -113,13 +106,6 @@
         <ul class="list-inline">
           <li v-if="dish.spicy" class="list-inline-item"><img class="foodIndicator" src="../../../static/spicy.svg" alt="Spicy food"> <small> Spicy</small></li>
           <li v-if="dish.vegetarian" class="list-inline-item"><img class="foodIndicator" src="../../../static/vegetarian.svg" alt="Vagetarian food"> <small> Vegetarian</small></li>
-        </ul>
-        <p v-if="dish.dishPrice">${{ dish.dishPrice }}</p>
-
-        <ul class="list-unstyled">
-          <li v-if="dish.dishPriceKimchi">Kimchi: ${{ dish.dishPriceKimchi }}</li>
-          <li v-if="dish.dishPriceBeef">Beef: ${{ dish.dishPriceBeef }}</li>
-          <li v-if="dish.dishPriceSeaFood">Sea Food: ${{ dish.dishPriceSeaFood }}</li>
         </ul>
       </div>
       <div class="col-lg-6 col-xl-5">
@@ -143,10 +129,6 @@
         <ul class="list-inline">
           <li v-if="dish.spicy" class="list-inline-item"><img class="foodIndicator" src="../../../static/spicy.svg" alt="Spicy food"> <small> Spicy</small></li>
           <li v-if="dish.vegetarian" class="list-inline-item"><img class="foodIndicator" src="../../../static/vegetarian.svg" alt="Vagetarian food"> <small> Vegetarian</small></li>
-        </ul>
-        <ul class="list-unstyled">
-          <li>Small: ${{ dish.smallDishPrice }}</li>
-          <li>Large: ${{ dish.largeDishPrice }}</li>
         </ul>
       </div>
       <div class="col-lg-6 col-xl-5">

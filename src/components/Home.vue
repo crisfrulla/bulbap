@@ -71,13 +71,18 @@
       </div>
     </div>
 
-
-    <div class="spacing-sm-bottom spacing-md-top">
+    <div class="spacing-sm-top">
+      <CateringOrder></CateringOrder>
+    </div>
+    <div class="">
       <SocialContainer></SocialContainer>
     </div>
 
     <div class="container spacing-md-bottom spacing-sm-top">
       <LocationShop></LocationShop>
+    </div>
+    <div class="">
+      <WorkWithUs></WorkWithUs>
     </div>
 
 
@@ -90,7 +95,8 @@ import ContentLeft6 from '../components/partials/ContentLeft6.vue'
 import MenuCard from '../components/partials/MenuCard.vue'
 import LocationShop from '../components/partials/LocationShop.vue'
 import SocialContainer from '../components/partials/SocialContainer.vue'
-import Delivery from '../components/partials/Delivery.vue'
+import CateringOrder from '../components/partials/CateringOrder.vue'
+import WorkWithUs from '../components/partials/WorkWithUs.vue'
 
 export default {
   name: 'home',
@@ -100,7 +106,8 @@ export default {
     MenuCard,
     LocationShop,
     SocialContainer,
-    Delivery
+    CateringOrder,
+    WorkWithUs
   }
 }
 </script>

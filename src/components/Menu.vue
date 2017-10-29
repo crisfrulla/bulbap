@@ -4,17 +4,20 @@
       class="hero-image-menu"
       heroHeadingEn="Menu">
     </Hero>
-    <div class="spacing-zero-bottom spacing-lg-top">
-        <Delivery></Delivery>
+    <div class="spacing-sm-bottom">
+      <CateringOrder></CateringOrder>
     </div>
-    <div class="container spacing-md-bottom spacing-sm-top">
+    <div class="container spacing-md-bottom spacing-md-top">
       <MenuList></MenuList>
     </div>
-    <div class="spacing-md-bottom spacing-sm-top">
-      <Delivery></Delivery>
+    <div class="">
+      <CateringOrder></CateringOrder>
     </div>
-    <div class="spacing-zero-bottom spacing-md-top">
+    <div class="">
       <SocialContainer></SocialContainer>
+    </div>
+    <div class="">
+      <WorkWithUs></WorkWithUs>
     </div>
 
   </div>
@@ -24,14 +27,19 @@
 import Hero from '../components/partials/Hero.vue'
 import MenuList from '../components/partials/MenuList.vue'
 import SocialContainer from '../components/partials/SocialContainer.vue'
+import CateringOrder from '../components/partials/CateringOrder.vue'
 import Delivery from '../components/partials/Delivery.vue'
+import WorkWithUs from '../components/partials/WorkWithUs.vue'
+
 export default {
   name: 'menu',
   components: {
     Hero,
     SocialContainer,
     MenuList,
-    Delivery
+    CateringOrder,
+    Delivery,
+    WorkWithUs
   }
 }
 </script>
