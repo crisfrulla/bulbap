@@ -70,14 +70,14 @@ export default {
         {
           locationName: 'Marlboro, NJ',
           locationStreet: '280 Route 9 N',
-          locationZip: 'Marlboro NJ 07751',
-          locationWeekHours: '',
-          locationWeekEndHours: '',
+          locationZip: 'Marlboro NJ 07746',
+          locationWeekHours: 'Mon to Fri: 11:00 - 9:30',
+          locationWeekEndHours: 'Sat to Sun: 11:00 - 9:30',
           locationNote: '',
           locationTransportation: '',
-          locationPhoto: '../../static/comingSoon-contact.jpg',
-          locationMap: '',
-          phone: ''
+          locationPhoto: '../../static/marlboro-contact.jpg',
+          locationMap: 'https://goo.gl/maps/ott2D1cdzpN2',
+          phone: '( 732 ) 617 1000'
         }
       ]
     }
