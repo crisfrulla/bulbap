@@ -24,7 +24,8 @@
           </div>
           <div class="col-12">
             <p v-if="shop.locationMap"><a :href="shop.locationMap" target="_blank"><i class="fa fa-map-marker fa-fw fa-lg" aria-hidden="true"></i>Get Direction</a></p>
-            <p v-if="shop.phone">Pick-Up and Delivery Available: <a href="tel:1-718-383-3663"> {{ shop.phone }}</a></p>
+            <p v-if="shop.phone">Pick-Up and Delivery Available: 
+            <a :href="`tel:${shop.phoneNumberFormat}`"> {{ shop.phone }}</a></p>
             <p v-if="shop.locationNote" class=""><strong>Note:</strong> {{ shop.locationNote}}</p>
             <p v-if="shop.locationTransportation" class=""><strong>Transportation:</strong> {{ shop.locationTransportation}}</p>
           </div>
@@ -53,7 +54,8 @@ export default {
           locationTransportation: 'From Manhattan - take E train to Court Square then transfer to G train.  3 stops to Nassau Ave. station',
           locationPhoto: '../../static/brooklyn-contact.jpg',
           locationMap: 'https://goo.gl/maps/uxnGiPRTcUM2',
-          phone: '( 718 ) 383 3663'
+          phone: '( 718 ) 383 3663',
+          phoneNumberFormat: '1-718-383-3663'
         },
         {
           locationName: 'Bronx',
@@ -65,7 +67,8 @@ export default {
           locationTransportation: '',
           locationPhoto: '../../static/bronx-contact.jpg',
           locationMap: 'https://goo.gl/maps/fPrVZdmSCa82',
-          phone: '( 718 ) 933 3537'
+          phone: '( 718 ) 933 3537',
+          phoneNumberFormat: '1-718-933-3537'
         },
         {
           locationName: 'Marlboro, NJ',
@@ -77,7 +80,8 @@ export default {
           locationTransportation: '',
           locationPhoto: '../../static/marlboro-contact.jpg',
           locationMap: 'https://goo.gl/maps/ott2D1cdzpN2',
-          phone: '( 732 ) 617 1000'
+          phone: '( 732 ) 617 1000',
+          phoneNumberFormat: '1-732-617-1000'
         }
       ]
     }
