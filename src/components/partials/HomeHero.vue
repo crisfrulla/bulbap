@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="scroll hidden-md-down">
-      <span></span><span></span><span></span>
+      <span></span>
     </div>
   </div>
 </template>
@@ -61,9 +61,9 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    min-width: 100%;
     height: 100vh;
-
+    padding-top: 100px;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row; /* works with row or column */
@@ -73,6 +73,7 @@ export default {
     -webkit-justify-content: center;
     justify-content: center;
     @media (max-width: 1200px) {
+      padding-top: 0;
       height: 400px;
       background-attachment: local;
     }
@@ -80,10 +81,10 @@ export default {
 
   h1 {
     text-transform: uppercase;
-    font-size: 11em;
+    font-size: 10em;
     font-weight: 300;
     color: #fff;
-    line-height: .9em;
+    line-height: .8em;
     margin-bottom: 0;
     @media (max-width: 1200px) {
       font-size: 5em;
@@ -115,7 +116,7 @@ export default {
 }
 .scroll {
   position: absolute;
-  top: 90%;
+  top: 94%;
   width: 100px;
   margin: 0 auto;
   left: 50%;
@@ -133,7 +134,7 @@ export default {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	-webkit-animation: scroll 2s infinite;
-	animation: scroll 2s infinite;
+	animation: scroll 4s infinite;
 	opacity: 0;
 	box-sizing: border-box;
 }
